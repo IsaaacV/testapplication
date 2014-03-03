@@ -8,12 +8,18 @@
 
 #import "TECAppDelegate.h"
 
+#import "TECHomeViewController.h"
+
 @implementation TECAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    TECHomeViewController *homeController = [[TECHomeViewController alloc] initWithNibName:@"TECHomeViewController" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:homeController];
+
+    [self.window setRootViewController:self.navController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

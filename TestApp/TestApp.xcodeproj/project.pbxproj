@@ -19,6 +19,8 @@
 		7C63B3F518C5254200AF29D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C63B3DD18C5254200AF29D6 /* UIKit.framework */; };
 		7C63B3FD18C5254200AF29D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C63B3FB18C5254200AF29D6 /* InfoPlist.strings */; };
 		7C63B3FF18C5254200AF29D6 /* TestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63B3FE18C5254200AF29D6 /* TestAppTests.m */; };
+		7C63B40B18C52F3000AF29D6 /* TECHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63B40918C52F3000AF29D6 /* TECHomeViewController.m */; };
+		7C63B40C18C52F3000AF29D6 /* TECHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C63B40A18C52F3000AF29D6 /* TECHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		7C63B3FA18C5254200AF29D6 /* TestAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestAppTests-Info.plist"; sourceTree = "<group>"; };
 		7C63B3FC18C5254200AF29D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C63B3FE18C5254200AF29D6 /* TestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppTests.m; sourceTree = "<group>"; };
+		7C63B40818C52F3000AF29D6 /* TECHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TECHomeViewController.h; sourceTree = "<group>"; };
+		7C63B40918C52F3000AF29D6 /* TECHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TECHomeViewController.m; sourceTree = "<group>"; };
+		7C63B40A18C52F3000AF29D6 /* TECHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TECHomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,8 @@
 		7C63B3DF18C5254200AF29D6 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				7C63B40E18C52F5400AF29D6 /* Xibs */,
+				7C63B40D18C52F3A00AF29D6 /* Controllers */,
 				7C63B3E818C5254200AF29D6 /* TECAppDelegate.h */,
 				7C63B3E918C5254200AF29D6 /* TECAppDelegate.m */,
 				7C63B3EB18C5254200AF29D6 /* Images.xcassets */,
@@ -142,6 +149,23 @@
 				7C63B3FB18C5254200AF29D6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C63B40D18C52F3A00AF29D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C63B40818C52F3000AF29D6 /* TECHomeViewController.h */,
+				7C63B40918C52F3000AF29D6 /* TECHomeViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7C63B40E18C52F5400AF29D6 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				7C63B40A18C52F3000AF29D6 /* TECHomeViewController.xib */,
+			);
+			name = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C63B3E418C5254200AF29D6 /* InfoPlist.strings in Resources */,
+				7C63B40C18C52F3000AF29D6 /* TECHomeViewController.xib in Resources */,
 				7C63B3EC18C5254200AF29D6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C63B3E618C5254200AF29D6 /* main.m in Sources */,
+				7C63B40B18C52F3000AF29D6 /* TECHomeViewController.m in Sources */,
 				7C63B3EA18C5254200AF29D6 /* TECAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +389,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -376,6 +403,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
